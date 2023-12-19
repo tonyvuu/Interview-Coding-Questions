@@ -48,7 +48,7 @@ is printed to the console. */
 // Create a for loop that prints out all even numbers between 10 ans 40 --- do the same for odd numbers too
 
 // for( i = 10; i <= 40; i++) {
-//     if(i % 2 === 1) {
+//     if(i % 2 === 0) {
 //         console.log(i)
 //     }
 // } 
@@ -535,12 +535,46 @@ is printed to the console. */
 
 // BUBBLESORT ALGORITHM
 
-// const array = [64, 43, 2, 9, 15, 23]
+const array = [64, 43, 2, 9, 15, 23, 9]
+
+
+// function sort(array){
+//     for(i = 0; i < array.length; i++){
+//         for(j = 0; j < array.length; j++){
+//             if(array[j] > array[j+1]){
+//                 [array[j], array[j+1]] = [array[j+1], array[j]]
+//             }
+//         }
+//     }
+//     return array
+// }
+
+// console.log(sort(array))
+
+function appearTwice(num){
+    newArray = []
+    for(i = 0; i < num.length; i++){
+        for(j = i+1; j < num.length; j++){
+            if(num[i] === num[j]){
+            newArray.push(num[i])
+            }
+        }
+    }return newArray
+}
+
+
+console.log(appearTwice(array))
+
+
+
+
+
+
 
 // function sort(arr){
     
-//     for(let i = 0; i < arr.length-1; i++){
-//         for(let j = 0; j < arr.length - 1 - i; j++){
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = 0; j < arr.length; j++){
 //             if(arr[j] > arr[j+1]){
 //                 [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
                 
@@ -643,7 +677,7 @@ is printed to the console. */
 // newArray = []
 
 // for(i = 0; i < array.length; i++){
-//     if(array[i] > 0) {
+//     if(array[i] < 0) {
 //     newArray.push(array[i])
 //     }
     
@@ -924,20 +958,21 @@ is printed to the console. */
 
 
 
-const testArray = [12, 29, 32, 22, 44, 57, 5, 12, 29]
+// const testArray = [12, 29, 32, 22, 44, 57, 5, 12, 29]
 
-const findDuplicates = (num) => {
-    let newArray = []
-    for(let i = 0; i < num.length; i++){
-        for(let j = i+1; j < num.length; j++){
-            if( num[i] === num[j]){
-                newArray.push(num[i])
-            }
-            else {
-                []
-            }
-        }
-    } return newArray
-}
+// const findDuplicates = (num) => {
+//     let newArray = []
+//     for(let i = 0; i < num.length; i++){
+//         for(let j = i+1; j < num.length; j++){
+//             if( num[i] === num[j]){
+//                 newArray.push(num[i])
+//             }
+//             else {
+//                 []
+//             }
+//         }
+//     } return newArray
+// }
 
-console.log(findDuplicates(testArray))
+// console.log(findDuplicates(testArray))
+
