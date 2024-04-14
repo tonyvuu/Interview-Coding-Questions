@@ -551,19 +551,19 @@ const array = [64, 43, 2, 9, 15, 23, 9]
 
 // console.log(sort(array))
 
-function appearTwice(num){
-    newArray = []
-    for(i = 0; i < num.length; i++){
-        for(j = i+1; j < num.length; j++){
-            if(num[i] === num[j]){
-            newArray.push(num[i])
-            }
-        }
-    }return newArray
-}
+// function appearTwice(num){
+//     newArray = []
+//     for(i = 0; i < num.length; i++){
+//         for(j = i+1; j < num.length; j++){
+//             if(num[i] === num[j]){
+//             newArray.push(num[i])
+//             }
+//         }
+//     }return newArray
+// }
 
 
-console.log(appearTwice(array))
+// console.log(appearTwice(array))
 
 
 
